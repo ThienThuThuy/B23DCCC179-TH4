@@ -12,6 +12,14 @@ export default defineConfig({
   layout: {
     ...defaultSettings, // Tiêu đề hiển thị
   },
+  proxy: {
+    '/api': {
+      target: 'http://localhost:5000', // Địa chỉ backend
+      changeOrigin: true,
+      pathRewrite: { '^/api': '' }, // Xóa prefix '/api' nếu cần
+    },
+  },
   routes,
   npmClient: 'yarn', // Cấu hình npmClient
 });
+

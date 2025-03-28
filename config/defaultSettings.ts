@@ -13,9 +13,9 @@ const Settings: LayoutSettings & {
   fixedHeader: false,
   fixSiderbar: true,
   colorWeak: false,
-  title: 'CPX Tool',
+  title: 'GTool',
   pwa: false,
-  logo: '/logo.png',
+  logo: '',
   iconfontUrl: '',
   siderWidth: 220,
 };
